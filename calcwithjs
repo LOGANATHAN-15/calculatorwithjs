@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculator</title>
+    <style>
+.buttons{
+    justify-content:center;
+    color: rgb(89, 181, 206);
+    align-items: center;
+    width: 10%;
+    font-size: 50px;
+    margin-top: 25px;
+    margin-left: 50px;
+    height: 100px;
+    border-radius: 25px;
+}
+#val{
+    align-items: center;
+    font-size: 25px;
+    width: 75%;
+    height: 75px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.bg{
+    background: #eeefef;
+}
+.C{
+background: rgb(204, 145, 26);
+color: black;
+}
+.black{
+    background: rgb(141, 193, 102);
+color: white;
+}
+    </style>
+    <script> src="calculator with js"</script>
+</head>
+<body class="bg">
+    <div class="ce">
+        <br>
+        <br>
+    <input type="text" id="val" readonly>
+    <br>
+    <input type="button" class="buttons black" value="c"onclick="val.value = ''">>
+    <input type="button" class="buttons black" value="%"onclick="val.value += '%'">
+    <input type="button" class="buttons black" value="x"onclick="val.value = ''">
+    <input type="button" class="buttons black" value="/"onclick="val.value += '/'">
+    <br>
+    <input type="button" class="buttons" value="7"onclick="val.value += 7">
+    <input type="button" class="buttons" value="8"onclick="val.value += 8">
+    <input type="button" class="buttons" value="9"onclick="val.value += 9">
+    <input type="button" class="buttons black" value="*"onclick="val.value += '*'">
+    <br>
+    <input type="button" class="buttons" value="4"onclick="val.value += 4">
+    <input type="button" class="buttons" value="5"onclick="val.value += 5">
+    <input type="button" class="buttons" value="6"onclick="val.value += 6">
+    <input type="button" class="buttons black" value="-"onclick="val.value += '-'">
+    <br>
+    <input type="button" class="buttons " value="1"onclick="val.value += 1">
+    <input type="button" class="buttons" value="2"onclick="val.value += 2">
+    <input type="button" class="buttons" value="3"onclick="val.value += 3">
+    <input type="button" class="buttons black" value="+"onclick="val.value += '+'">
+    <br>
+    <input type="button" class="buttons " value="00"onclick="val.value += 0">
+    <input type="button" class="buttons" value="0"onclick="val.value += 0">
+    <input type="button" class="buttons black" value="."onclick="val.value += '.'">
+    <input type="button" class="buttons C" value="="onclick="val.value =  eval(val.value)">
+</div>
+</body>
+</html>
